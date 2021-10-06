@@ -1,3 +1,3 @@
 # kaggle 
 
-Here I'll be taking Machine Learning courses and participating in coding competitions.
+Here I'll be posting my solutions to kaggle's Machine Learning courses and coding competitions.
