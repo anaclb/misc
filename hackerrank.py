@@ -39,3 +39,12 @@ def countingSort(arr):
     for i in range(n):
         counter[arr[i]] += 1
     return counter
+
+def flippingMatrix(matrix):
+    n = len(matrix)
+    print(n)
+    soma = 0
+    for i in range(n//2):
+        for j in range(n//2):
+            soma += max(matrix[i][j], matrix[i][n-j-1], matrix[n-i-1][j], matrix[n-i-1][n-j-1])
+    return soma
