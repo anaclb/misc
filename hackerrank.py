@@ -21,3 +21,21 @@ def timeConversion(s):
 def median(arr):
     arr.sort()
     return arr[(int((len(arr)-1)/2))]
+
+def lonelyinteger(a):
+    for element in a:
+        if a.count(element) == 1:
+            return element
+
+def diagonalDifference(arr):
+    r_diag, l_diag = 0, 0
+    for i in range(n):
+        r_diag += arr[i][i]
+        l_diag += arr[n-1-i][i]
+    return abs(r_diag - l_diag)
+
+def countingSort(arr):
+    counter = [0] * 100
+    for i in range(n):
+        counter[arr[i]] += 1
+    return counter
