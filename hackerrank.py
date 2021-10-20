@@ -17,3 +17,8 @@ def timeConversion(s):
     elif time[0] != "12":
         time[0] = str(int(time[0])+12)
     return ':'.join(time)[:-2]
+
+
+def Median(arr):
+    arr.sort()
+    return arr[(int((len(arr)-1)/2))]
