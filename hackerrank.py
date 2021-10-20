@@ -42,7 +42,6 @@ def countingSort(arr):
 
 def flippingMatrix(matrix):
     n = len(matrix)
-    print(n)
     soma = 0
     for i in range(n//2):
         for j in range(n//2):
