@@ -47,3 +47,10 @@ def flippingMatrix(matrix):
         for j in range(n//2):
             soma += max(matrix[i][j], matrix[i][n-j-1], matrix[n-i-1][j], matrix[n-i-1][n-j-1])
     return soma
+
+
+def oddNumbers(l, r):
+    if l%2!=0:
+        return list(range(l,r+1,2))
+    else:
+        return list(range(l+1,r+1,2))
